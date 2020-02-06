@@ -17,6 +17,13 @@ plot_linely.grp(data, vary, vx1, vx2, vgrp)
 
 \item{vgrp}{input group variable name}
 }
+\value{
+3D line plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

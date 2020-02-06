@@ -11,6 +11,13 @@ plot_density1(data, varx)
 
 \item{varx}{input x variable name}
 }
+\value{
+density plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

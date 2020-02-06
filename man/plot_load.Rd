@@ -11,6 +11,13 @@ plot_load(loads, a)
 
 \item{a}{number of components}
 }
+\value{
+load plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

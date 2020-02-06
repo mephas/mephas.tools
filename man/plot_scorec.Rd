@@ -17,6 +17,13 @@ plot_scorec(scores, n1, n2, groupvec, type)
 
 \item{type}{input type variable}
 }
+\value{
+score plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

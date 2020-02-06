@@ -11,6 +11,13 @@ plot_roc(yhat, y)
 
 \item{y}{itrue values}
 }
+\value{
+roc plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

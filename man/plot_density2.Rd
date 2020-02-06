@@ -9,6 +9,13 @@ plot_density2(data2)
 \arguments{
 \item{data2}{input data frame}
 }
+\value{
+2 density plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

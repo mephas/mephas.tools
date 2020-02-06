@@ -6,6 +6,13 @@
 \usage{
 stylink()
 }
+\value{
+link
+}
 \description{
 tab functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

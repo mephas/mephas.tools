@@ -23,6 +23,13 @@ tabPanel.upload.pr(
 
 \item{quote}{input quote name}
 }
+\value{
+panel for upload files used in mephas
+}
 \description{
 panel functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

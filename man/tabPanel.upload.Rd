@@ -2,7 +2,7 @@
 % Please edit documentation in R/panel.R
 \name{tabPanel.upload}
 \alias{tabPanel.upload}
-\title{panel functions in MEPHAS}
+\title{Panel functions for mephas}
 \usage{
 tabPanel.upload(
   file = "file",
@@ -23,6 +23,13 @@ tabPanel.upload(
 
 \item{quote}{input quote name}
 }
+\value{
+panel for upload files used in mephas
+}
 \description{
-panel functions in MEPHAS
+Panel functions for mephas
+}
+\examples{
+# NOT Run
+  
 }

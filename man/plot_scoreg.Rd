@@ -15,6 +15,13 @@ plot_scoreg(scores, n1, n2, groupvec)
 
 \item{groupvec}{input group variable}
 }
+\value{
+score plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

@@ -11,6 +11,13 @@ plot_box1(data, varx)
 
 \item{varx}{input x variable name}
 }
+\value{
+box plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

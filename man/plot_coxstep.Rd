@@ -9,6 +9,13 @@ plot_coxstep(data)
 \arguments{
 \item{data}{input data frame}
 }
+\value{
+cpx-snell plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

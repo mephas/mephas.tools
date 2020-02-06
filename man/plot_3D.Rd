@@ -19,6 +19,13 @@ plot_3D(scores, loads, nx, ny, nz, scale)
 
 \item{scale}{input line length}
 }
+\value{
+3D biplot plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

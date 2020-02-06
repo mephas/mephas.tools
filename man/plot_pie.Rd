@@ -9,6 +9,13 @@ plot_pie(data)
 \arguments{
 \item{data}{input data frame}
 }
+\value{
+pie plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

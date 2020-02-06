@@ -9,6 +9,13 @@ plot_corr(data)
 \arguments{
 \item{data}{correaltion matrix}
 }
+\value{
+correlation plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

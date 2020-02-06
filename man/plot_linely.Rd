@@ -15,6 +15,13 @@ plot_linely(data, vary, vx1, vx2)
 
 \item{vx2}{input x2 variable name}
 }
+\value{
+3D line plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

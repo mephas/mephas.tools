@@ -6,6 +6,13 @@
 \usage{
 tablink()
 }
+\value{
+link tab
+}
 \description{
 tab functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

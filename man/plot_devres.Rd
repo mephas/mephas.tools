@@ -9,6 +9,13 @@ plot_devres(data)
 \arguments{
 \item{data}{input data frame}
 }
+\value{
+deviance residuals plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

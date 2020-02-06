@@ -17,6 +17,13 @@ plot_slgt(data, varx, vary, xlab, ylab)
 
 \item{ylab}{input y variable name}
 }
+\value{
+logistic plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

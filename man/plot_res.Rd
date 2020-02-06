@@ -13,6 +13,13 @@ plot_res(data, varx, vary)
 
 \item{vary}{input y variable name}
 }
+\value{
+residual plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

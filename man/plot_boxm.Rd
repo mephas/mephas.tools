@@ -9,6 +9,13 @@ plot_boxm(datam)
 \arguments{
 \item{datam}{input data frame}
 }
+\value{
+box plot for more groups in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

@@ -13,6 +13,13 @@ plot_line1(data, varx, vary)
 
 \item{vary}{input y variable name}
 }
+\value{
+line plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

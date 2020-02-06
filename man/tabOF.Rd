@@ -6,6 +6,13 @@
 \usage{
 tabOF()
 }
+\value{
+off button
+}
 \description{
 tab functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

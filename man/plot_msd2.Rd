@@ -9,6 +9,13 @@ plot_msd2(data)
 \arguments{
 \item{data}{input data frame}
 }
+\value{
+mean sd for 2 groups plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

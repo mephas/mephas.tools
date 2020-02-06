@@ -13,6 +13,13 @@ plot_score(scores, n1, n2)
 
 \item{n2}{input y variable}
 }
+\value{
+score plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

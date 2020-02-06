@@ -15,6 +15,13 @@ tabPanel.upload.num(file = "file", header = "header", col = "col", sep = "sep")
 
 \item{sep}{input separator name}
 }
+\value{
+panel for upload files used in mephas
+}
 \description{
 panel functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

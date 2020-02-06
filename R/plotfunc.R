@@ -2,6 +2,11 @@
 
 ##' @title plot functions in MEPHAS
 ##'
+##' @return scatter plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param data input data frame
 ##' @param varx input x variable name
 ##' @param vary input y variable name
@@ -20,6 +25,12 @@ plot_scat <- function(data, varx, vary, xlab, ylab){
     theme_minimal() + theme(legend.title = element_blank())
 }
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return logistic plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param data input data frame
 ##' @param varx input x variable name
@@ -40,6 +51,12 @@ plot_slgt <- function(data, varx, vary, xlab, ylab){
 }
 ##' @title plot functions in MEPHAS
 ##'
+##'
+##' @return residual plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param data input data frame
 ##' @param varx input x variable name
 ##' @param vary input y variable name
@@ -59,6 +76,12 @@ plot_res <- function(data, varx, vary){
 
 ##' @title plot functions in MEPHAS
 ##'
+##'
+##' @return box plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param data input data frame
 ##' @param varx input x variable name
 ##'
@@ -72,6 +95,12 @@ plot_box1 <- function(data, varx){
 }
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return box plot for 2 groups in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param data2 input data frame
 ##'
@@ -89,6 +118,12 @@ plot_box2 <- function(data2){
 }
 ##' @title plot functions in MEPHAS
 ##'
+##'
+##' @return box plot for more groups in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param datam input data frame
 ##'
 ##' @export
@@ -105,6 +140,12 @@ plot_boxm <- function(datam){
 
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return mean sd plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param data input data frame
 ##' @param varx input x variable name
@@ -127,6 +168,12 @@ plot_msd1 <- function(data, varx){
 
 ##' @title plot functions in MEPHAS
 ##'
+##'
+##' @return mean sd for 2 groups plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param data input data frame
 ##'
 ##' @export
@@ -147,6 +194,12 @@ plot_msd2 <- function(data){
 }
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return mean sd for more groups plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param datam input data frame
 ##' @param var input variable name
@@ -172,6 +225,12 @@ plot_msdm <- function(datam, var, grp){
 
 ##' @title plot functions in MEPHAS
 ##'
+##'
+##' @return line plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param data input data frame
 ##' @param varx input x variable name
 ##' @param vary input y variable name
@@ -190,6 +249,12 @@ plot_line1 <- function(data, varx, vary){
 }
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return 2 lines plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param data2 input data frame
 ##' @param var input variable name
@@ -211,7 +276,18 @@ plot_line2 <- function(data2, var, grp1, grp2){
   theme_minimal() + theme(legend.title = element_blank())
 }
 
-
+##' @title plot functions in MEPHAS
+##'
+##'
+##' @return mat plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
+##' @param data input data frame
+##' @param ybreak input break
+##'
+##' @export
 plot_mat <- function(data, ybreak){
 data$id <- 1:nrow(data) 
 plot_data <- reshape::melt(data, id.var=c("id", ybreak))
@@ -224,6 +300,12 @@ ggplot(plot_data, aes(x=value, y=y, group=variable)) +
 }
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return histogram plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param data input data frame
 ##' @param varx input x variable name
@@ -249,6 +331,12 @@ plot_hist1 <- function(data, varx, bw){
 
 ##' @title plot functions in MEPHAS
 ##'
+##'
+##' @return histogram plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param data input data frame
 ##' @param varx input x variable name
 ##' @param bw input bin numbers
@@ -273,6 +361,12 @@ plot_hist1c <- function(data, varx, bw){
 
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return histogram plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param data2 input data frame
 ##' @param bw input bin numbers
@@ -302,6 +396,12 @@ plot_hist2 <- function(data2, bw){
 
 ##' @title plot functions in MEPHAS
 ##'
+##'
+##' @return density plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param data input data frame
 ##' @param varx input x variable name
 ##'
@@ -316,6 +416,12 @@ plot_density1 <- function(data, varx){
 
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return 2 density plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param data2 input data frame
 ##'
@@ -335,6 +441,12 @@ plot_density2 <- function(data2){
 
 ##' @title plot functions in MEPHAS
 ##'
+##'
+##' @return qq plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param data input data frame
 ##' @param varx input x sample name
 ##'
@@ -350,6 +462,12 @@ plot_qq1 <- function(data, varx){
 
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return 2 qq plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param data2 input data frame
 ##'
@@ -368,6 +486,12 @@ plot_qq2 <- function(data2){
 
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return pie plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param data input data frame
 ##'
@@ -388,6 +512,12 @@ plot_pie <- function(data){
 
 ##' @title plot functions in MEPHAS
 ##'
+##'
+##' @return bar plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param count input count data frame
 ##'
 ##' @export
@@ -406,6 +536,12 @@ plot_bar <- function(count){
 
 ##' @title plot functions in MEPHAS
 ##'
+##'
+##' @return bar plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param count input count data frame
 ##'
 ##' @export
@@ -423,6 +559,12 @@ plot_bar1 <- function(count){
 
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return roc plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param yhat predicted values
 ##' @param y itrue values
@@ -457,6 +599,12 @@ plot_roc <- function(yhat, y){
 
 ##' @title plot functions in MEPHAS
 ##'
+##'
+##' @return cpx-snell plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param data input data frame
 ##'
 ##' @export
@@ -472,6 +620,12 @@ plot_coxstep <-function(data){
 
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return deviance residuals plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param data input data frame
 ##'
@@ -490,6 +644,12 @@ plot_devres <- function(data){
 
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return load plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param loads input loading data frame
 ##' @param a number of components
@@ -518,6 +678,12 @@ plot_load <- function(loads, a){
 
 ##' @title plot functions in MEPHAS
 ##'
+##'
+##' @return score plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param scores input score data frame
 ##' @param n1 input x variable
 ##' @param n2 input y variable
@@ -543,6 +709,12 @@ plot_scoreg <- function(scores, n1, n2, groupvec){
 }
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return score plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param scores input score data frame
 ##' @param n1 input x variable
@@ -573,6 +745,12 @@ plot_scorec <- function(scores, n1, n2, groupvec, type){
 
 ##' @title plot functions in MEPHAS
 ##'
+##'
+##' @return score plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param scores input score data frame
 ##' @param n1 input x variable
 ##' @param n2 input y variable
@@ -595,6 +773,12 @@ plot_score <- function(scores, n1, n2){
 }
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return score and load plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param scores input score data frame
 ##' @param loads input loading data frame
@@ -624,6 +808,12 @@ theme_minimal()+theme(legend.title=element_blank())
 }
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return correlation plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param data correaltion matrix
 ##'
@@ -659,6 +849,12 @@ plot_corr <- function(data){
 ###----------plotly plot
 ##' @title plot functions in MEPHAS
 ##'
+##'
+##' @return pie plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param data input data frame
 ##'
 ##' @export
@@ -675,6 +871,12 @@ plot_piely <- function(data){
 }
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return 3D biplot plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param scores input score data
 ##' @param loads input loading data
@@ -734,6 +936,12 @@ plot_3D <- function(scores, loads, nx,ny,nz, scale){
 
 ##' @title plot functions in MEPHAS
 ##'
+##'
+##' @return 3D line plot in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param data input data frame
 ##' @param vary input y variable name
 ##' @param vx1 input x1 variable name
@@ -764,6 +972,12 @@ plot_linely.grp <- function(data, vary, vx1, vx2, vgrp){
 }
 
 ##' @title plot functions in MEPHAS
+##'
+##'
+##' @return 3D line plot in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param data input data frame
 ##' @param vary input y variable name

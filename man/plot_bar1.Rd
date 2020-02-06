@@ -9,6 +9,13 @@ plot_bar1(count)
 \arguments{
 \item{count}{input count data frame}
 }
+\value{
+bar plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

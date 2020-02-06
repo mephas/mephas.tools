@@ -13,6 +13,13 @@ plot_hist1(data, varx, bw)
 
 \item{bw}{input bin numbers}
 }
+\value{
+histogram plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

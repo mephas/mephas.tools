@@ -15,6 +15,13 @@ plot_line2(data2, var, grp1, grp2)
 
 \item{grp2}{input factor group 2 name}
 }
+\value{
+2 lines plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

@@ -11,6 +11,13 @@ plot_qq1(data, varx)
 
 \item{varx}{input x sample name}
 }
+\value{
+qq plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

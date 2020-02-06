@@ -9,6 +9,13 @@ plot_box2(data2)
 \arguments{
 \item{data2}{input data frame}
 }
+\value{
+box plot for 2 groups in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

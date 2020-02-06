@@ -1,5 +1,11 @@
 ##' @title tab functions in MEPHAS
 ##'
+##'
+##' @return stop tab
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @export
 tabstop <- function(){
         navbarMenu("", icon = icon("power-off"),
@@ -22,6 +28,12 @@ tabstop <- function(){
 
 
 ##' @title tab functions in MEPHAS
+##'
+##'
+##' @return link tab
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @export
 tablink <- function(){
@@ -55,6 +67,12 @@ tablink <- function(){
 
 ##' @title tab functions in MEPHAS
 ##'
+##'
+##' @return off button
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @export
 tabOF <- function(){
 fluidPage(#
@@ -70,6 +88,12 @@ shinyWidgets::switchInput(#
 }
 
 ##' @title tab functions in MEPHAS
+##'
+##'
+##' @return link 
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @export
 stylink <- function(){

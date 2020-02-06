@@ -15,6 +15,13 @@ plot_biplot(scores, loads, n1, n2)
 
 \item{n2}{input nth component}
 }
+\value{
+score and load plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

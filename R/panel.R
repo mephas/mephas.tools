@@ -2,8 +2,13 @@
 ## functions for MEPHAS
 ##
 ##
-##' @title panel functions in MEPHAS
+##' @title Panel functions for mephas
 ##'
+##' @return panel for upload files used in mephas
+##'
+##' @examples
+##' # NOT Run
+##'   
 ##' @importFrom stats cor reshape
 ##' @importFrom magrittr %>%
 ##' @importFrom ROCR prediction performance
@@ -17,6 +22,7 @@
 ##' @param sep input separator name
 ##' @param quote input quote name
 ##'
+
 ##' @export
 tabPanel.upload <- function(file ="file", header="header", col="col", sep="sep", quote="quote"){
 
@@ -88,6 +94,11 @@ a(tags$i("Find some example data here"),href = "https://github.com/mephas/datase
 
 ##' @title panel functions in MEPHAS
 ##'
+##' @return panel for upload files used in mephas
+##'
+##' @examples
+##' # NOT Run
+##'
 ##' @param file input data
 ##' @param header input header name
 ##' @param col input column  name
@@ -150,6 +161,12 @@ a(tags$i("Find some example data here"),href = "https://github.com/mephas/datase
 }
 
 ##' @title panel functions in MEPHAS
+##'
+##'
+##' @return panel for upload files used in mephas
+##'
+##' @examples
+##' # NOT Run
 ##'
 ##' @param file input data
 ##' @param header input header name

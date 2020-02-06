@@ -6,6 +6,13 @@
 \usage{
 tabstop()
 }
+\value{
+stop tab
+}
 \description{
 tab functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

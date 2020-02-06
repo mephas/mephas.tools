@@ -13,6 +13,13 @@ plot_msdm(datam, var, grp)
 
 \item{grp}{input factor group variable name}
 }
+\value{
+mean sd for more groups plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }

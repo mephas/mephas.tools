@@ -17,6 +17,13 @@ plot_scat(data, varx, vary, xlab, ylab)
 
 \item{ylab}{input y variable name}
 }
+\value{
+scatter plot in mephas
+}
 \description{
 plot functions in MEPHAS
+}
+\examples{
+# NOT Run
+
 }
