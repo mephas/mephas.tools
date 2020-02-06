@@ -1,0 +1,213 @@
+setwd("/Users/yi/Document/mephas.tools")
+setwd("/Users/yi/Desktop/mephas")
+##---------- build and check packages ----------
+library(devtools)
+#library("roxygen2")
+load_all()
+document()
+
+check()
+mephas::mephasOpen("condist")
+mephas::mephasOpen("disdist")
+mephas::mephasOpen("ttest")
+mephas::mephasOpen("nptest")
+mephas::mephasOpen("proptest")
+mephas::mephasOpen("tabletest")
+mephas::mephasOpen("anova")
+mephas::mephasOpen("linereg")
+mephas::mephasOpen("logisreg")
+mephas::mephasOpen("surv")
+mephas::mephasOpen("pca")
+mephas::mephasOpen("pls")
+##---------- check spelling ----------
+spelling::spell_check_package("/Users/yi/Desktop/mephas")
+spelling::update_wordlist("/Users/yi/Desktop/mephas")
+
+##---------- add license and pkgs ----------
+usethis::use_mit_license("Yi Zhou")
+
+usethis::use_package("devtools", "suggests")
+usethis::use_package("usethis", "suggests")
+usethis::use_package("stargazer", "suggests")
+
+##---------- validate emails ----------
+rhub::validate_email(email = "zhouyi0426@126.com")
+rhub::list_validated_emails()
+
+##---------- rhub check ----------
+check_rhub()
+check_win_devel()
+build()
+
+##---------- install from github ----------
+devtools::install_github("mephas/mephas", upgrade="never")
+
+##---------- build website ----------
+pkgdown::build_site()
+pkgdown::build_favicons()
+pkgdown::build_home()
+
+##---------- validate emails ----------
+
+release()
+
+
+##---------- create new.md ----------
+use_cran_comments()
+devtools::install_github("Dschaykib/newsmd")
+library(newsmd)
+db <- news()
+my_news <- news$new()
+
+db3 <- news(Version == "1.0.1" & grepl("^BUG", Category) & grepl("PR#", Text),
+            db = db)
+
+my_news <- newsmd()
+my_news$get_text()
+
+#check(args = "--no-examples")
+
+## Build the site of mephas.github.io
+#devtools::check_cran("/Users/yi/mephas_0.1.0.tar.gz")
+revdepcheck::revdep_check() #after install
+
+
+
+#devtools::test()
+#usethis::use_testthat()
+
+##---------- install and check
+remove.packages(c("httpuv", "ggplot2", "shiny", "DescTools", "ROCR",
+                  "Rmisc", "ggfortify", "gridExtra","pastecs","plotROC",
+                  "psych","reshape","stargazer","survival","survminer","xtable",
+                  "pls", "spls"))
+
+install.packages(c("DescTools", "ROCR",
+               "Rmisc", "ggfortify","pastecs","plotROC",
+               "psych","reshape","stargazer","survminer","xtable","spls"))
+
+
+remove.packages(c("DescTools",
+                  "DT",
+                  "exactRankTests",
+                  "dunn.test",
+                  "ROCR",
+                  "ggplot2",
+                  "psych",
+                  "pls",
+                  "reshape",
+                  "shiny",
+                  "survival",
+                  "survminer",
+                  "survAUC",
+                  "stargazer",
+                  "spls"))
+
+remove.packages("mephas")
+
+find.package("mephas")
+remotes::install_github("mephas/mephas")
+
+load_all()
+#mephas::MFSdistribution() #ok
+mephas::mephasOpen("condist")
+mephas::mephasOpen("disdist")
+mephas::mephasOpen("ttest")
+mephas::mephasOpen("nptest")
+mephas::mephasOpen("proptest")
+mephas::mephasOpen("tabletest")
+mephas::mephasOpen("anova")
+mephas::mephasOpen("linereg")
+mephas::mephasOpen("logisreg")
+mephas::mephasOpen("surv")
+mephas::mephasOpen("pca")
+mephas::mephasOpen("pls")
+
+mephas::MFScondist()#ok
+mephas::MFSdisdist()#ok
+mephas::MFSttest() #ok
+mephas:::MFSnptest() #ok
+mephas::MFSproptest()# ok
+mephas::MFSrctabtest()#ok
+mephas::MFSanova()
+mephas::MFSlr()
+mephas::MFSlogit()
+mephas::MFSsurv()
+mephas::MFSpca()
+mephas::MFSpls()
+
+#devtools::document("/Users/yi/Documents/mephas")
+#devtools::use_data_raw()
+
+##---------- create data set ----------
+
+load("/Users/yi/Documents/mephas_web/7_1MFSlr/LR.RData")
+load("/Users/yi/Documents/mephas_web/7_2MFSlogit/LGT.RData")
+load("/Users/yi/Documents/mephas_web/7_3MFSsurv/Surv.RData")
+load("/Users/yi/Documents/mephas_web/8_1MFSpca/pca.RData")
+load("/Users/yi/Documents/mephas_web/8_2MFSpls/pls.RData")
+
+usethis::use_data(chem,mouse,
+                  dia.test,dia.train,
+                  LGT, LGT.new,
+                  #liver.test,liver.train,
+                  LR,LR.new,
+                  nki.test, nki.train,
+                  nki2.test,nki2.train,
+                  internal = TRUE, overwrite = TRUE)
+
+advertisement_logistic_regression <- read.csv('advertisement.csv')
+#devtools::use_data(advertisement,overwrite = TRUE)
+lung_cox_regression <- read.csv('lung.csv')
+#devtools::use_data(lung,overwrite = TRUE)
+insurance_linear_regression <- read.csv('insurance.csv')
+#devtools::use_data(insurance,overwrite = TRUE)
+coloncancer <- read.csv('coloncancer.csv')
+#devtools::use_data(coloncancer,overwrite = TRUE)
+
+ygroup_pca <- data.frame(group = coloncancer[,1])
+
+genesample1 <- coloncancer[,2:21]
+genesample2 <- coloncancer[,2:201]
+
+yarray_s_pls <- data.frame(Y = coloncancer[,22:22])
+ymatrix_s_pls <- coloncancer[,22:27]
+
+
+setwd("/Users/yi/Documents/mephas/R")
+usethis::use_data(advertisement_logistic_regression,
+                  lung_cox_regression,
+                  insurance_linear_regression,
+                  ygroup_pca,
+                  yarray_s_pls,
+                  ymatrix_s_pls,
+                  genesample1,
+                  genesample2,
+                  internal = TRUE, overwrite = TRUE)
+
+devtools::install_github("mephas/mephas", upgrade = "never",quiet = TRUE)
+
+list.of.packages <- c("DescTools",
+    "DT",
+    "exactRankTests",
+    "dunn.test",
+    "ROCR",
+    "ggplot2",
+    "magrittr",
+    "psych",
+    "pls",
+    "plotly",
+    "reshape",
+    "shiny",
+    "shinythemes",
+    "shinyWidgets",
+    "survival",
+    "survminer",
+    "survAUC",
+    "spls")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+new.packages
+if(length(new.packages)) install.packages(new.packages)
+
+
+
