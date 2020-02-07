@@ -1,6 +1,6 @@
 Package: mephas.tools
 Type: Package
-Title: Functions and Tools for Medical and Pharmaceutical Statistics Based on Shiny
+Title: Implements for Medical and Pharmaceutical Statistics
 Description: Functions and tools that are used medical and pharmaceutical statistics based on shiny. 
 Version: 1.0.0
 Authors@R: c(

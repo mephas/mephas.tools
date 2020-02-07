@@ -3,10 +3,10 @@
 
 - [**Web server MEPHAS**](#web-server-mephas)
 - [**R package mephas, installations**](#r-package-mephas-installations)
-  - [Installation from GitHub in RStudio console](#installation-from-github-in-rstudio-console)
-  - [Installation from ".tar.gz" file](#installation-from-targz-file)
-  - [Find a statistical methods using the flowchart](#find-a-statistical-methods-using-the-flowchart)
-  - [Commands to open mephas windows](#commands-to-open-mephas-windows)
+    - [Installation from GitHub in RStudio console](#installation-from-github-in-rstudio-console)
+    - [Installation from ".tar.gz" file](#installation-from-targz-file)
+    - [Find a statistical methods using the flowchart](#find-a-statistical-methods-using-the-flowchart)
+    - [Commands to open mephas windows](#commands-to-open-mephas-windows)
 
 <!-- /MarkdownTOC -->
 
@@ -18,7 +18,7 @@ Two platforms are available: (1) web server and (2) R package.
 ## **Web server MEPHAS**
 
 <a id="homepage-httpsalain003phsosaka-uacjpmephas"></a>
-#### [Homepage](https://alain003.phs.osaka-u.ac.jp/mephas/) and [source code at GitHub](https://mephas.github.io/mephas_web/)
+#### [Homepage](https://alain003.phs.osaka-u.ac.jp/mephas/) and [source code at GitHub](https://github.com/mephas/mephas_web)
 
 ------
 
@@ -134,47 +134,47 @@ Discrete probability distribution, [web server](https://alain003.phs.osaka-u.ac.
 
     > MFSdisdist()
     
-##### 2. Parametric T test for means, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/2MFSttest.html)
+##### 2. Parametric T test for means, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/2MFSttest/)
 
     > MFSttest()
 
-##### 3. Non-parametric tests for median, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/3MFSnptest.html)
+##### 3. Non-parametric tests for median, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/3MFSnptest/)
 
     > MFSnptest()
 
-##### 4. Test for binomial proportions, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/4MFSproptest.html)
+##### 4. Test for binomial proportions, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/4MFSproptest/)
 
     > MFSproptest()
 
-##### 5. Test for contingency tables, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/5MFSrctabtest.html)
+##### 5. Test for contingency tables, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/5MFSrctabtest/)
 
     > MFSrctabtest()
 
-##### 6. Analysis of variance, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/6MFSanova.html)
+##### 6. Analysis of variance, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/6MFSanova.html/)
 
     > MFSanova()
 
 ##### 7. Statistical model, 
 
-Linear regression, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/7_1MFSlr.html)
+Linear regression, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/7_1MFSlr/)
     
     > MFSlr()
 
-Logistic regression, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/7_2MFSlogit.html)
+Logistic regression, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/7_2MFSlogit/)
 
     > MFSlogit()
 
-Survival analysis, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/7_3MFSsurv.html)
+Survival analysis, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/7_3MFSsurv/)
     
     > MFSsurv()
 
 ##### 8. Dimensional analysis
 
-Dimensional analysis 1, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/8_1MFSpca.html)
+Dimensional analysis 1, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/8_1MFSpca/)
 
     > MFSpca()
 
-Dimensional analysis 2, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/8_2MFSpls.html)
+Dimensional analysis 2, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/8_2MFSpls/)
 
     > MFSpls()
 
