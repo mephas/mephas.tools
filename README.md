@@ -41,7 +41,7 @@ Two platforms are available: (1) web server and (2) R package.
 <a id="installation-from-github-in-rstudio-console"></a>
 ### Installation from GitHub in RStudio console
 
-#### Before installing, check the existence of R package "devtools", [see details about "devtools"](https://cran.r-project.org/web/packages/devtools/readme/README.html)
+#### Before installing, check the existence of R package "devtools", [see details about "devtools"](https://CRAN.R-project.org/package=devtools)
 
     > packageVersion("devtools")
 
