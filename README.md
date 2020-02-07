@@ -116,7 +116,7 @@ Before open the applications, please load the package mephas
 
 Then, you can open the applications as follows. 
 
-#### All-in-one function, [see details](https://mephas.github.io/mephas/reference/mephasOpen.html)
+#### All-in-one function
 
     > mephasOpen()
 
@@ -150,7 +150,7 @@ Discrete probability distribution, [web server](https://alain003.phs.osaka-u.ac.
 
     > MFSrctabtest()
 
-##### 6. Analysis of variance, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/6MFSanova.html/)
+##### 6. Analysis of variance, [web server](https://alain003.phs.osaka-u.ac.jp/mephas_web/6MFSanova/)
 
     > MFSanova()
 
